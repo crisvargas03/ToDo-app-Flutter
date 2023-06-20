@@ -167,16 +167,17 @@ class _HomeState extends State<Home> {
       child: TextField(
         onChanged: (value) => runFilter(value),
         decoration: const InputDecoration(
-            contentPadding: EdgeInsets.all(0),
-            prefixIcon: Icon(
-              Icons.search,
-              color: tdBlack,
-              size: 20,
-            ),
-            prefixIconConstraints: BoxConstraints(maxHeight: 20, minWidth: 25),
-            border: InputBorder.none,
-            hintText: 'Search',
-            hintStyle: TextStyle(color: tdGray)),
+          contentPadding: EdgeInsets.all(0),
+          prefixIcon: Icon(
+            Icons.search,
+            color: tdBlack,
+            size: 20,
+          ),
+          prefixIconConstraints: BoxConstraints(maxHeight: 20, minWidth: 25),
+          border: InputBorder.none,
+          hintText: 'Search',
+          hintStyle: TextStyle(color: tdGray),
+        ),
       ),
     );
   }
@@ -193,11 +194,13 @@ class _HomeState extends State<Home> {
             size: 30,
           ),
           SizedBox(
-              height: 40,
-              width: 40,
-              child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Image.asset('assets/images/avatartion.png')))
+            height: 40,
+            width: 40,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset('assets/images/avatartion.png'),
+            ),
+          )
         ]));
   }
 }
